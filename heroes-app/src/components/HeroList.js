@@ -15,10 +15,8 @@ function HeroList() {
   }, []);
 
   const handleDeleteHero = (heroId) => {
-    // Send a DELETE request to delete the hero
     axios.delete(`http://localhost:5555/heroes/${heroId}`)
       .then(() => {
-        // Hero deleted successfully, update the UI by filtering out the deleted hero
         setHeroes(heroes.filter((hero) => hero.id !== heroId));
       })
       .catch((error) => {

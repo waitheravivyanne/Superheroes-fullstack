@@ -15,10 +15,8 @@ function PowerList() {
   }, []);
 
   const handleDeletePower = (powerId) => {
-    // Send a DELETE request to delete the power
     axios.delete(`http://localhost:5555/powers/${powerId}`)
       .then(() => {
-        // Power deleted successfully, update the UI by filtering out the deleted power
         setPowers(powers.filter((power) => power.id !== powerId));
       })
       .catch((error) => {

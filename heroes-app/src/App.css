@@ -1,12 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -25,21 +40,36 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #0056b3;
 }
 
-/* Add styles for buttons */
 .button {
-  background-color: #007bff;
+  background-color: #ff5722;
   color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 4px;
-  text-decoration: none;
+  text-decoration: none; 
   margin-right: 10px;
+  display: inline-block; 
 }
 
 .button:hover {
-  background-color: #0056b3;
-  text-decoration: none;
+  background-color: #ff6d41;
+  text-decoration: none; 
+}
+
+.selected-hero {
+  background-color: #4CAF50; 
+  color: #fff; 
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.selected-power {
+  background-color: #ff9800; 
+  color: #fff; 
+  padding: 20px;
+  border-radius: 5px;
 }
