@@ -5,13 +5,20 @@ function HeroList() {
   const [heroes, setHeroes] = useState([]);
 
   useEffect(() => {
+    let isMounted = true;
+
     axios.get('http://localhost:5555/heroes')
       .then((response) => {
+        if (isMounted) { 
         setHeroes(response.data);
+        }
       })
       .catch((error) => {
         console.error('Error fetching heroes:', error);
       });
+      return () => {
+        isMounted = false;
+      };
   }, []);
 
   const handleDeleteHero = (heroId) => {

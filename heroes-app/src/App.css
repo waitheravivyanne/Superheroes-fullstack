@@ -1,3 +1,16 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: url('https://i.pinimg.com/564x/d4/e3/83/d4e383f2e9c07dda5c2740acedb1cb1b.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -50,26 +63,26 @@ a:hover {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 4px;
-  text-decoration: none; 
+  text-decoration: none;
   margin-right: 10px;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .button:hover {
   background-color: #ff6d41;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .selected-hero {
-  background-color: #4CAF50; 
-  color: #fff; 
+  background-color: #4CAF50;
+  color: #ffffff;
   padding: 20px;
   border-radius: 5px;
 }
 
 .selected-power {
-  background-color: #ff9800; 
-  color: #fff; 
+  background-color: #ff9800;
+  color: #ffffff;
   padding: 20px;
   border-radius: 5px;
 }
